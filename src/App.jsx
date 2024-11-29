@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Layout from "./Components/Layout";
 import Home from "./Pages/Home";
+import Community from "./Pages/Community";
 
 let router = createBrowserRouter([
   {
@@ -13,10 +14,14 @@ let router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path:"/",
-        element: <Home />
-      }
-    ]
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/community",
+        element: <Community />,
+      },
+    ],
   },
 ]);
 
