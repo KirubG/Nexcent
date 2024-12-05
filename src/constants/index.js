@@ -1,67 +1,68 @@
 import { Building, Club, Members } from "../assets";
+import { Aclub, Amember, Apayment,Abooking } from "../assets";
 
 const NavbarLinks = [
   {
     linkName: "Home",
-    route: "/",
+    route: "#home",
   },
   {
     linkName: "Features",
-    route: "/features",
+    route: "#features",
   },
   {
     linkName: "Community",
-    route: "/community",
+    route: "#community",
   },
   {
     linkName: "Blog",
-    route: "/blog",
+    route: "#blog",
   },
   {
     linkName: "Pricing",
-    route: "/pricing",
+    route: "#pricing",
   },
 ];
 const footerLinks = [
   {
     linkName: "Home",
-    route: "/",
+    route: "#",
   },
   {
     linkName: "Features",
-    route: "/features",
+    route: "#features",
   },
   {
     linkName: "Community",
-    route: "/community",
+    route: "#community",
   },
   {
     linkName: "Blog",
-    route: "/blog",
+    route: "#blog",
   },
   {
     linkName: "Pricing",
-    route: "/pricing",
+    route: "#pricing",
   },
   {
     linkName: "Help",
-    route: "/help",
+    route: "#help",
   },
   {
     linkName: "Feedback",
-    route: "/feedback",
+    route: "#feedback",
   },
   {
     linkName: "Privacy",
-    route: "/privacy",
+    route: "#privacy",
   },
   {
     linkName: "Terms",
-    route: "/terms",
+    route: "#terms",
   },
   {
     linkName: "About",
-    route: "/about",
+    route: "#about",
   },
 ];
 
@@ -86,4 +87,27 @@ const cCard = [
   },
 ];
 
-export { NavbarLinks, footerLinks, cCard };
+const Achievements = [
+  {
+    icon: Amember,
+    no: "2,245,341",
+    title: "members",
+  },
+  {
+    icon: Abooking,
+    no: "828,867",
+    title: "Event Booking",
+  },
+  {
+    icon: Aclub,
+    no: "46,328",
+    title: "Clubs",
+  },
+  {
+    icon: Apayment,
+    no: "1,926,436",
+    title: "Payments",
+  },
+];
+
+export { NavbarLinks, footerLinks, cCard, Achievements };

@@ -1,24 +1,24 @@
 import React from 'react'
 import { footerLinks } from '../constants'
-import { NavLink } from 'react-router-dom';
+
 
 function Footer() {
     let date = new Date();
     let thisYear = date.getFullYear();
   return (
     <>
-      <div className="w-full bg-[#263238] h-32 mt-24 flex flex-col flex-wrap">
+      <div className="w-full bg-[#263238] h-32 mt-8 flex flex-col flex-wrap">
         {footerLinks.map((link, index) => {
           return (
             <ul>
               <li>
-                <NavLink
+                <a
                   className=" text-[#ffffff] hover:text-[#43a046]"
-                  to={link.route}
+                  href={link.route}
                   key={index}
                 >
                   {link.linkName}
-                </NavLink>
+                </a>
               </li>
             </ul>
           );

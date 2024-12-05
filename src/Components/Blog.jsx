@@ -1,17 +1,17 @@
 import React from "react";
-import { Rafiki } from "../assets";
-import {Sectionwrapper} from "../hoc"
+import { Pana } from "../assets";
+import Sectionwrapper from "../hoc/Sectionwrapper";
 
-function Result() {
+function Blog() {
   return (
-    <div className="w-full h-500px flex mt-8">
-      <div className="ill w-[30%] h-full flex self-center ml-32">
-        <img src={Rafiki} alt="rafiki"  className="w-[442px] h-[328px] mx-auto" />
+    <div className="w-full h-500px flex my-8 ">
+      <div className=" w-[30%] h-full flex self-center ml-32">
+        <img src={Pana} alt="pana" className="w-[442px] h-[448px] mx-auto" />
       </div>
 
-      <div className="w-[60%] h-full flex flex-col gap-8 mr-32">
+      <div className="w-[70%] h-full flex flex-col gap-8 mr-32">
         <h1 className="text-[50px] font-bold">
-          The unseen of spending three years at pixelgrade
+          How to design your site footer like <br /> we did
         </h1>
         <p className="text-[#4d4d4d]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est iure eos
@@ -21,7 +21,11 @@ function Result() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
           laboriosam, recusandae veniam earum libero laborum dolores
           reprehenderit inventore quaerat fugiat? Voluptatum doloremque in
-          numquam atque, sint necessitatibus quasi laborum ducimus.
+          numquam atque, sint necessitatibus quasi laborum ducimus. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Iusto amet molestias eius
+          sit ex exercitationem provident reprehenderit magnam neque recusandae
+          veritatis non porro placeat, repudiandae error dignissimos aut soluta
+          facilis!
         </p>
         <button className="bg-[#4caf90] text-white p-4 w-fit">
           Learn More
@@ -31,4 +35,4 @@ function Result() {
   );
 }
 
-export default Sectionwrapper(Result, "")
+export default Sectionwrapper(Blog, "");

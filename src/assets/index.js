@@ -8,6 +8,12 @@ import Building from "./Building.png";
 import Club from "./Club.png";
 import Members from "./Members.png";
 import Rafiki from "./rafiki.png";
+import Amember from "./Amember.png";
+import Aclub from "./Aclub.png";
+import Abooking from "./Abooking.png";
+import Apayment from "./Apayment.png";
+import Pana from "./pana.png";
+import T from "./image9.png";
 
 export {
   Icon,
@@ -20,4 +26,10 @@ export {
   Club,
   Members,
   Rafiki,
+  Abooking,
+  Aclub,
+  Amember,
+  Apayment,
+  Pana,
+  T
 };

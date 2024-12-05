@@ -1,11 +1,10 @@
 import React from "react";
 import { NavbarLinks } from "../constants";
-import { NavLink } from "react-router-dom";
 import { Icon } from "../assets";
 
 function Navbar() {
   return (
-    <div className="w-full h-20 flex justify-between items-center bg-white ">
+    <div className="w-full h-20 flex justify-between items-center bg-white opacity-100  shadow-lg fixed top-0 left-0 z-50">
       <div className="logo flex ml-11">
         <img src={Icon}  alt="Nexcent" className="w-[107] h-[16]" />
       </div>
@@ -13,9 +12,9 @@ function Navbar() {
         <div className="flex gap-4 items-center ml-11 text-[#4d4d4d]">
           {NavbarLinks.map((link, index) => {
             return (
-              <NavLink className="text-xl" to={link.route}>
+              <a className="text-xl hover:text-[#4caf90]" href={link.route}>
                 {link.linkName}
-              </NavLink>
+              </a>
             );
           })}
         </div>

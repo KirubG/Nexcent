@@ -1,9 +1,10 @@
 import React from "react";
+import { Sectionwrapper } from "../hoc";
 
 function Cheader() {
   return (
-    <div className="w-full h-fit flex flex-col">
-        <h1 className="text-center text-[50px] font-normal text-[#4d4d4d]">
+    <div className="w-full h-fit flex flex-col mt-8">
+        <h1 className="text-center text-[50px] font-bold text-[#4d4d4d]">
           Manage your entire community <br /> in a single system
         </h1>
         <p className="text-[#4d4d4d] text-center">
@@ -14,4 +15,4 @@ function Cheader() {
   );
 }
 
-export default Cheader;
+export default Sectionwrapper(Cheader, "")

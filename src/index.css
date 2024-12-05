@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom styling for Swiper pagination dots */
+.swiper-pagination-bullet {
+    background-color: #c2e1da !important; /* Default (inactive) color */
+    width: 12px !important; /* Size of the dots */
+    height: 12px !important; /* Size of the dots */
+    opacity: 0.7 !important; /* Default opacity */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4caf90 !important; /* Active dot color */
+    opacity: 1 !important; /* Active dot full opacity */
+}
+
+.swiper-pagination {
+    position: absolute !important;
+    bottom: 20px !important; /* Center the pagination vertically */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+}
+
+*{
+    scroll-behavior: smooth;
+}
